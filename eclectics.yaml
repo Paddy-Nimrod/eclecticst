@@ -1,0 +1,8 @@
+FROM amazoncorretto:11-alpine-jdk
+Maintainer nimrod
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+
+
+#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
